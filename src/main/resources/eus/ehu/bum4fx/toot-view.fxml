@@ -7,18 +7,18 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.web.WebView?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eus.ehu.bum4fx.Controller">
    <children>
       <Label layoutX="63.0" layoutY="36.0" text="Original author: " />
       <TextField fx:id="authorName" layoutX="167.0" layoutY="32.0" />
       <Label layoutX="62.0" layoutY="85.0" text="Publication date:" />
-      <Label layoutX="62.0" layoutY="137.0" text="Toot:" />
+      <Label layoutX="61.0" layoutY="129.0" text="Toot:" />
       <TextField fx:id="date" layoutX="167.0" layoutY="81.0" />
-      <WebView fx:id="tootContent" layoutX="167.0" layoutY="137.0" prefHeight="171.0" prefWidth="276.0" />
+      <WebView fx:id="tootContent" layoutX="167.0" layoutY="129.0" prefHeight="171.0" prefWidth="276.0" />
       <CheckBox fx:id="boosted" layoutX="402.0" layoutY="36.0" mnemonicParsing="false" />
       <Label layoutX="426.0" layoutY="36.0" text="Boosted" />
-      <Button fx:id="previousButton" layoutX="180.0" layoutY="342.0" mnemonicParsing="false" text="Previous" />
-      <Button fx:id="nextButton" layoutX="316.0" layoutY="342.0" mnemonicParsing="false" text="Next" />
+      <Button fx:id="previousButton" layoutX="195.0" layoutY="354.0" mnemonicParsing="false" onAction="#previousClick" text="Previous" />
+      <Button fx:id="nextButton" layoutX="330.0" layoutY="354.0" mnemonicParsing="false" onAction="#nextClick" text="Next" />
+      <Label fx:id="output" layoutX="118.0" layoutY="318.0" prefHeight="17.0" prefWidth="363.0" />
    </children>
 </AnchorPane>
