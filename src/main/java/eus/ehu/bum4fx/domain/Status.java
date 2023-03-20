@@ -23,7 +23,6 @@ public class Status {
     Boolean bookmarked;
     Status reblog;
     Account account;
-    List<Status> statusList;
 
     class Account{
         String id;

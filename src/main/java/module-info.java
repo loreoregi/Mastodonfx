@@ -14,5 +14,7 @@ module eus.ehu.bum4fx {
     exports eus.ehu.bum4fx;
     exports eus.ehu.bum4fx.domain;
     opens eus.ehu.bum4fx.domain to javafx.fxml, com.google.gson;
+    exports eus.ehu.bum4fx.controllers;
+    opens eus.ehu.bum4fx.controllers to javafx.fxml;
 
 }

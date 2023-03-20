@@ -1,8 +1,10 @@
-package eus.ehu.bum4fx;
+package eus.ehu.bum4fx.controllers;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.reflect.TypeToken;
+import eus.ehu.bum4fx.HyperLinkRedirectListener;
+import eus.ehu.bum4fx.Utils;
 import eus.ehu.bum4fx.domain.Status;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -16,7 +18,7 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Controller {
+public class ShowTootsController {
 
     @FXML
     private TextField authorName;
@@ -88,6 +90,7 @@ public class Controller {
             output.setText("You cannot reach the next one. You already are in the last toot!");
 
     }
+
 
     @FXML
     void initialize() {
